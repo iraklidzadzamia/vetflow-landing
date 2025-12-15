@@ -4,6 +4,7 @@ export { Hero } from "./Hero";
 export { Problem } from "./Problem";
 export { Features } from "./Features";
 export { HowItWorks } from "./HowItWorks";
+export { BookingModes } from "./BookingModes";
 export { Integrations } from "./Integrations";
 export { Safety } from "./Safety";
 export { Proof } from "./Proof";

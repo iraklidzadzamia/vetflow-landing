@@ -224,6 +224,23 @@ export function LeadForm({ className = "" }: LeadFormProps) {
                 </div>
             </div>
 
+            {/* Service interest dropdown */}
+            <div>
+                <label htmlFor="service_interest" className="block text-sm font-medium text-slate-700 mb-1.5">
+                    What do you want first?
+                </label>
+                <select
+                    id="service_interest"
+                    name="service_interest"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 outline-none transition-colors bg-white"
+                >
+                    <option value="">Select an option</option>
+                    <option value="after_hours_only">After-hours replies only</option>
+                    <option value="replies_booking_pending">Replies + booking (Pending/Slots)</option>
+                    <option value="direct_booking">Direct booking integration</option>
+                </select>
+            </div>
+
             <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
                     Message <span className="text-slate-400">(optional)</span>
@@ -255,7 +272,7 @@ export function LeadForm({ className = "" }: LeadFormProps) {
                         Sending...
                     </>
                 ) : (
-                    "Request a demo"
+                    "Request a 14-day pilot"
                 )}
             </button>
 

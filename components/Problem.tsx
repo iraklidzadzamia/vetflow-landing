@@ -59,6 +59,11 @@ export function Problem() {
                         </div>
                     ))}
                 </div>
+
+                {/* Closing line */}
+                <p className="mt-10 text-center text-slate-600 font-medium">
+                    Every missed after-hours inquiry is a lost appointment — and often a negative review.
+                </p>
             </div>
         </section>
     );

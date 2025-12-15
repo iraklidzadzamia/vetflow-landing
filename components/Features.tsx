@@ -15,7 +15,7 @@ const features = [
             </svg>
         ),
         title: "Book, reschedule, or cancel appointments",
-        description: "Connects to your calendar and books real appointments. Clients can reschedule or cancel on their own, reducing no-shows and freeing up your phone lines.",
+        description: "Bookings follow your rules and controlled availability to prevent double-booking. Clients can reschedule or cancel on their own, reducing no-shows.",
     },
     {
         icon: (

@@ -4,6 +4,7 @@ import {
   Problem,
   Features,
   HowItWorks,
+  BookingModes,
   Integrations,
   Safety,
   Proof,
@@ -22,6 +23,7 @@ export default function Home() {
         <Problem />
         <Features />
         <HowItWorks />
+        <BookingModes />
         <Integrations />
         <Safety />
         <Proof />

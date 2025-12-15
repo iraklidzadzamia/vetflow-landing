@@ -7,11 +7,11 @@ const plans = [
         features: [
             "1 clinic location",
             "Instagram + Facebook Messenger",
-            "Basic calendar integration",
+            "Pending booking mode",
             "English language support",
             "Email support",
         ],
-        cta: "Get a quote",
+        cta: "Request pilot",
         highlighted: false,
     },
     {
@@ -20,12 +20,12 @@ const plans = [
         features: [
             "Multiple locations",
             "All channels: Instagram, Messenger, WhatsApp, Web",
-            "Advanced calendar sync",
+            "Slots or Direct booking mode",
             "English + Russian + Spanish",
             "Priority support",
-            "Analytics dashboard access",
+            "Weekly insights report",
         ],
-        cta: "Get a quote",
+        cta: "Request pilot",
         highlighted: true,
     },
     {
@@ -34,7 +34,7 @@ const plans = [
         features: [
             "Unlimited locations",
             "Custom integrations",
-            "Custom booking system connections",
+            "Direct booking system connections",
             "Dedicated onboarding",
             "SLA guarantees",
             "Custom training and refinement",
@@ -46,8 +46,8 @@ const plans = [
 
 const pricingFactors = [
     "Message volume",
-    "Number of channels connected",
-    "Calendar/booking integration complexity",
+    "Booking mode",
+    "Number of channels",
     "Languages required",
 ];
 
@@ -60,7 +60,7 @@ export function Pricing() {
                         Simple, transparent pricing
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                        Request a quote tailored to your clinic&apos;s size and needs.
+                        Pilot available. Pricing depends on message volume + booking mode.
                     </p>
                 </div>
 
@@ -87,8 +87,8 @@ export function Pricing() {
                             </p>
 
                             <div className="mt-6">
-                                <span className={`text-3xl font-bold ${plan.highlighted ? "text-white" : "text-slate-900"}`}>
-                                    Request pricing
+                                <span className={`text-2xl font-bold ${plan.highlighted ? "text-white" : "text-slate-900"}`}>
+                                    14-day pilot
                                 </span>
                             </div>
 

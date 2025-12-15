@@ -4,44 +4,44 @@ import { useState } from "react";
 
 const faqs = [
     {
-        question: "Does it replace my staff?",
-        answer: "No. VetFlow AI handles repetitive questions and booking requests so your staff can focus on in-person patient care. It's a support tool, not a replacement. Complex inquiries and all medical decisions stay with your team.",
+        question: "Is this AI, humans, or hybrid?",
+        answer: "VetFlow AI is powered by AI that's trained on your clinic's specific information. For complex or sensitive situations, it escalates to your human team. You always have final say — it's a hybrid approach where AI handles routine questions while humans handle exceptions.",
     },
     {
-        question: "Will it give medical advice?",
-        answer: "Never. The AI is strictly configured to avoid diagnosing, prescribing, or recommending treatments. It answers general questions about your services and hours, and books appointments. For anything medical, it directs clients to call the clinic or book a consultation.",
+        question: "What if a client asks for medical advice?",
+        answer: "The AI never diagnoses, prescribes, or recommends treatments. It answers general questions about your services and hours. For anything medical, it tells the client to call the clinic or book a consultation. This is a hard rule — no exceptions.",
+    },
+    {
+        question: "Can we do after-hours only?",
+        answer: "Yes. Many clinics start with after-hours coverage only. The AI replies when your team is off — evenings, weekends, holidays. During business hours, your staff handles messages as usual.",
+    },
+    {
+        question: "How do you prevent double-booking?",
+        answer: "We offer three booking modes: Pending (we capture details, you confirm), Slots (book only into predefined availability), and Direct (write into your calendar with controlled access). All modes respect your availability rules to prevent conflicts.",
+    },
+    {
+        question: "What systems do you integrate with?",
+        answer: "We integrate with Google Calendar for scheduling. For channels, we support Instagram, Facebook Messenger, WhatsApp (if your policy allows), and website chat. Need something else? Let us know in the demo form and we'll confirm compatibility.",
+    },
+    {
+        question: "Does it replace my staff?",
+        answer: "No. VetFlow AI handles repetitive questions and booking requests so your staff can focus on in-person patient care. Complex inquiries and all medical decisions stay with your team.",
     },
     {
         question: "What if it doesn't know the answer?",
-        answer: "If the AI isn't sure about something, it tells the client honestly and suggests they call or email your clinic directly. You set escalation rules — certain topics can automatically trigger a handoff to your staff.",
-    },
-    {
-        question: "How do bookings work?",
-        answer: "The AI connects to your calendar (Google Calendar or compatible booking system) and books real appointments based on your availability. Clients can also reschedule or cancel through the same channels, reducing no-shows.",
-    },
-    {
-        question: "Do you support my booking software?",
-        answer: "We integrate with Google Calendar and common veterinary practice management systems. If you use something else, reach out in the demo form — we'll confirm compatibility and work on a solution if needed.",
-    },
-    {
-        question: "Can I review the clinic info it uses?",
-        answer: "Absolutely. Before going live, you review and approve all information the AI uses — services, pricing, hours, policies, and FAQs. You can update this content anytime.",
+        answer: "If the AI isn't sure about something, it tells the client honestly and suggests they call or email your clinic directly. You set escalation rules — certain topics automatically trigger a handoff to your staff.",
     },
     {
         question: "What languages do you support?",
-        answer: "Currently English, Russian, and Spanish. The AI automatically detects the client's language and responds accordingly. If you need additional languages, let us know — we're expanding support.",
+        answer: "English, Russian, and Spanish. The AI automatically detects the client's language and responds accordingly. If you need additional languages, let us know.",
     },
     {
         question: "How fast can we launch?",
-        answer: "Typical setup takes 2–5 days. This includes connecting channels, loading your clinic information, setting up calendar integration, and testing. Larger or more complex setups may take a bit longer.",
-    },
-    {
-        question: "What happens if there's an emergency?",
-        answer: "The AI recognizes emergency keywords and immediately tells the client to call your clinic or go to an emergency veterinary hospital. It never delays urgent care by trying to handle emergencies.",
+        answer: "Typical setup takes 2–5 days. This includes connecting channels, loading your clinic information, setting up calendar integration, and testing.",
     },
     {
         question: "How do I pause or stop the assistant?",
-        answer: "You have full control. You can pause the AI anytime through your dashboard. Pausing means clients get your normal channel experience (no AI replies) until you turn it back on.",
+        answer: "You can request pausing anytime — we disable replies immediately. Pausing means clients get your normal channel experience (no AI replies) until you turn it back on.",
     },
 ];
 

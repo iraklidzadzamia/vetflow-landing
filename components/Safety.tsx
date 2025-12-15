@@ -2,15 +2,6 @@ const safetyPoints = [
     {
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-        ),
-        title: "Not for emergencies",
-        description: "If a client describes an emergency, the AI immediately tells them to call the clinic or go to an emergency vet. It never delays urgent care.",
-    },
-    {
-        icon: (
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
             </svg>
         ),
@@ -37,6 +28,14 @@ const safetyPoints = [
     },
 ];
 
+const escalationTriggers = [
+    "Medical advice / urgent symptoms",
+    "Billing or refund disputes",
+    "Aggressive / abusive messages",
+    "Anything outside your published policies",
+    "Any uncertainty about booking details",
+];
+
 export function Safety() {
     return (
         <section id="safety" className="py-16 md:py-24 bg-white">
@@ -56,14 +55,14 @@ export function Safety() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
                     <div>
-                        <p className="font-semibold text-amber-800">Not a replacement for emergency care</p>
+                        <p className="font-semibold text-amber-800">We do not provide medical advice</p>
                         <p className="text-sm text-amber-700 mt-1">
-                            If you suspect a pet emergency, call your clinic directly or visit an emergency veterinary hospital immediately.
+                            For emergencies, clients are immediately directed to call the clinic or visit an emergency vet.
                         </p>
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {safetyPoints.map((point, index) => (
                         <div
                             key={index}
@@ -82,16 +81,21 @@ export function Safety() {
                     ))}
                 </div>
 
-                {/* Privacy section */}
-                <div id="privacy" className="mt-16 max-w-3xl mx-auto text-center scroll-mt-24">
-                    <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                        Privacy & Data Handling
+                {/* Escalation triggers */}
+                <div className="mt-12 max-w-3xl mx-auto">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4 text-center">
+                        Escalation triggers (AI hands off to your team)
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
-                        Your clinic information is used only to answer client questions and book appointments.
-                        We do not share or sell your data. Access is limited to your authorized team.
-                        When unsure, the AI escalates to your staff instead of guessing.
-                    </p>
+                    <div className="grid sm:grid-cols-2 gap-3">
+                        {escalationTriggers.map((trigger, index) => (
+                            <div key={index} className="flex items-center gap-2 p-3 bg-slate-50 rounded-lg">
+                                <svg className="w-4 h-4 text-amber-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+                                <span className="text-slate-700 text-sm">{trigger}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
