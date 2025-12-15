@@ -17,7 +17,7 @@ const steps = [
     {
         number: "4",
         title: "You go live — and we refine",
-        description: "Launch to clients. We monitor real conversations and refine the AI based on actual questions. Your assistant gets smarter every week.",
+        description: "Launch to clients. We review real conversations and propose improvements based on real questions — nothing changes without your approval.",
     },
 ];
 

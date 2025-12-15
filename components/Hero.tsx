@@ -52,28 +52,25 @@ export function Hero() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
                             <span className="text-sm sm:text-base text-left">
-                                <strong>Conversation logs + insights:</strong> search and export what clients asked (for stats &amp; training)
+                                <strong>Conversation logs + insights:</strong> search and export what clients asked (for reporting &amp; improvement)
                             </span>
                         </div>
                     </div>
 
                     {/* CTAs */}
-                    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div className="mt-10 flex flex-col items-center justify-center">
                         <Link
                             href="#demo"
                             className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-all shadow-lg shadow-teal-600/25 hover:shadow-xl hover:shadow-teal-600/30"
                         >
-                            Request a 14-day pilot
+                            Get a demo
                             <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
                         </Link>
-                        <Link
-                            href="#demo"
-                            className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-slate-700 bg-white border border-slate-200 rounded-full hover:bg-slate-50 transition-all"
-                        >
-                            Get a demo
-                        </Link>
+                        <p className="mt-3 text-sm text-slate-500">
+                            14-day pilot available after the demo.
+                        </p>
                     </div>
 
                     {/* Micro-trust line */}
@@ -87,7 +84,7 @@ export function Hero() {
                             <svg className="inline-block w-4 h-4 mr-1 text-teal-600 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
-                            Proven in a real clinic: 2,000+ messages handled in 60 days (pilot). Results vary by clinic.
+                            Live in a real clinic: 2,000+ messages handled in the last 60 days. Results vary by clinic.
                         </p>
                         <p className="text-xs text-slate-400 mt-2">
                             Pilot KPIs we track: response time, booking requests, confirmed appointments, escalation rate.
