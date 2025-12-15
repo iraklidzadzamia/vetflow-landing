@@ -24,7 +24,7 @@ const safetyPoints = [
             </svg>
         ),
         title: "Privacy & data handling",
-        description: "We store conversation logs for QA & reporting (you can request deletion). We minimize data: only what's needed to answer + book. We don't sell or share your data.",
+        description: "We store conversation logs for QA & reporting (you can request deletion). We minimize data: only what's needed to answer + book. Your data is not used to train public models, and we don't sell or share it.",
     },
 ];
 

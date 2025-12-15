@@ -37,7 +37,7 @@ const plans = [
             "Direct booking + custom rules",
             "Dedicated onboarding",
             "SLA guarantees",
-            "Custom training and refinement",
+            "Custom improvement and refinement",
         ],
         cta: "Contact us",
         highlighted: false,

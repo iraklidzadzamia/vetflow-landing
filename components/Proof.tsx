@@ -7,7 +7,7 @@ export function Proof() {
                         Built from real clinic experience
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                        VetFlow AI isn&apos;t theoretical — it&apos;s based on actual clinic workflows and real client conversations.
+                        VetFlow AI isn&apos;t theoretical — it&apos;s based on real clinic workflows and anonymized conversation patterns.
                     </p>
                 </div>
 
@@ -88,7 +88,7 @@ export function Proof() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                 </svg>
                                 <span className="font-semibold text-slate-900">2,000+ messages handled</span>
-                                <span className="text-slate-500">in a real clinic (60-day pilot)</span>
+                                <span className="text-slate-500">in a real clinic (last 60 days)</span>
                             </div>
                             <p className="text-sm text-slate-500 mt-2">
                                 We&apos;ll track these KPIs in your 14-day pilot: response time, booking requests, appointments booked, escalation rate.
