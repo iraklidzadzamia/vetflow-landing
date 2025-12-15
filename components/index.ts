@@ -13,3 +13,4 @@ export { FAQ } from "./FAQ";
 export { LeadForm } from "./LeadForm";
 export { FinalCTA } from "./FinalCTA";
 export { Footer } from "./Footer";
+export { ScrollToTop } from "./ScrollToTop";

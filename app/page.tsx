@@ -12,6 +12,7 @@ import {
   FAQ,
   FinalCTA,
   Footer,
+  ScrollToTop,
 } from "@/components";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
