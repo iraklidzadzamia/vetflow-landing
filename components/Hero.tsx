@@ -23,7 +23,7 @@ export function Hero() {
                         Choose: <strong>Answer-only</strong> (no bookings) or <strong>Direct booking</strong> into your Google Calendar.
                     </p>
                     <p className="mt-2 text-base text-slate-500 max-w-3xl mx-auto">
-                        If a message is unclear or medical — it escalates to your team.
+                        If a message is unclear or needs staff attention — it escalates to your team.
                     </p>
                     <p className="mt-2 text-base text-amber-600 font-medium">
                         No medical advice.
@@ -87,7 +87,7 @@ export function Hero() {
                             Live in a real clinic: 2,000+ messages handled in the last 60 days. Results vary by clinic.
                         </p>
                         <p className="text-xs text-slate-400 mt-2">
-                            Pilot KPIs we track: response time, booking requests, confirmed appointments, escalation rate.
+                            KPIs we track: response time, booking requests, confirmed appointments, escalation rate.
                         </p>
                     </div>
                 </div>
