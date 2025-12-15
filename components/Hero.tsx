@@ -20,32 +20,40 @@ export function Hero() {
 
                     {/* Subheadline */}
                     <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                        VetFlow answers in English / Russian / Spanish and books into your Google Calendar.
-                        If a request is unclear or medical — it escalates to your team.
+                        Choose: <strong>Answer-only</strong> (no bookings) or <strong>Direct booking</strong> into your Google Calendar.
                     </p>
-                    <p className="mt-2 text-base text-amber-600 font-medium max-w-3xl mx-auto">
+                    <p className="mt-2 text-base text-slate-500 max-w-3xl mx-auto">
+                        If a message is unclear or medical — it escalates to your team.
+                    </p>
+                    <p className="mt-2 text-base text-amber-600 font-medium">
                         No medical advice.
                     </p>
 
-                    {/* Bullet points */}
-                    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                        <div className="flex items-center gap-2 text-slate-700">
-                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    {/* Bullet points - 2 modes */}
+                    <div className="mt-8 flex flex-col items-start max-w-xl mx-auto gap-3">
+                        <div className="flex items-start gap-3 text-slate-700">
+                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
-                            <span className="text-sm sm:text-base">After-hours coverage that actually books visits</span>
+                            <span className="text-sm sm:text-base text-left">
+                                <strong>Answer-only mode:</strong> instant replies from your clinic info (zero calendar access)
+                            </span>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-700">
-                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="flex items-start gap-3 text-slate-700">
+                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
-                            <span className="text-sm sm:text-base">Safe booking modes: Pending / Slots / Direct</span>
+                            <span className="text-sm sm:text-base text-left">
+                                <strong>Direct booking mode:</strong> checks availability → creates appointments in Google Calendar
+                            </span>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-700">
-                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="flex items-start gap-3 text-slate-700">
+                            <svg className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
-                            <span className="text-sm sm:text-base">Conversation logs + weekly insights</span>
+                            <span className="text-sm sm:text-base text-left">
+                                <strong>Conversation logs + insights:</strong> search and export what clients asked (for stats &amp; training)
+                            </span>
                         </div>
                     </div>
 
@@ -70,7 +78,7 @@ export function Hero() {
 
                     {/* Micro-trust line */}
                     <p className="mt-4 text-sm text-slate-500">
-                        Start without full access to your practice system — Pending/Slots mode first.
+                        Start with Answer-only (no calendar access) → upgrade to Direct booking when ready.
                     </p>
 
                     {/* Trust strip */}

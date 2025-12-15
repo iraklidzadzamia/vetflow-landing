@@ -224,21 +224,33 @@ export function LeadForm({ className = "" }: LeadFormProps) {
                 </div>
             </div>
 
-            {/* Service interest dropdown */}
+            {/* Mode dropdown */}
             <div>
-                <label htmlFor="service_interest" className="block text-sm font-medium text-slate-700 mb-1.5">
-                    What do you want first?
+                <label htmlFor="mode" className="block text-sm font-medium text-slate-700 mb-1.5">
+                    Mode
                 </label>
                 <select
-                    id="service_interest"
-                    name="service_interest"
+                    id="mode"
+                    name="mode"
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 outline-none transition-colors bg-white"
                 >
-                    <option value="">Select an option</option>
-                    <option value="after_hours_only">After-hours replies only</option>
-                    <option value="replies_booking_pending">Replies + booking (Pending/Slots)</option>
-                    <option value="direct_booking">Direct booking integration</option>
+                    <option value="">Select a mode</option>
+                    <option value="answer_only">Answer-only</option>
+                    <option value="direct_booking">Direct booking (Google Calendar)</option>
                 </select>
+            </div>
+
+            {/* Pause checkbox */}
+            <div className="flex items-start gap-3">
+                <input
+                    type="checkbox"
+                    id="pause_feature"
+                    name="pause_feature"
+                    className="mt-1 w-4 h-4 text-teal-600 border-slate-300 rounded focus:ring-teal-500"
+                />
+                <label htmlFor="pause_feature" className="text-sm text-slate-600">
+                    I want the ability to pause the assistant anytime
+                </label>
             </div>
 
             <div>

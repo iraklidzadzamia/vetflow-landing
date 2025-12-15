@@ -17,7 +17,7 @@ const faqs = [
     },
     {
         question: "How do you prevent double-booking?",
-        answer: "We offer three booking modes: Pending (we capture details, you confirm), Slots (book only into predefined availability), and Direct (write into your calendar with controlled access). All modes respect your availability rules to prevent conflicts.",
+        answer: "In Direct booking mode, we check Google Calendar availability before creating any appointment. No appointment is created if the slot is already taken. This prevents double-booking by design.",
     },
     {
         question: "What systems do you integrate with?",
@@ -41,7 +41,7 @@ const faqs = [
     },
     {
         question: "How do I pause or stop the assistant?",
-        answer: "You can request pausing anytime — we disable replies immediately. Pausing means clients get your normal channel experience (no AI replies) until you turn it back on.",
+        answer: "You can pause anytime — we disable replies immediately. Messages can route to your staff while paused, then resume when you're ready. Perfect for busy hours or emergencies.",
     },
 ];
 
