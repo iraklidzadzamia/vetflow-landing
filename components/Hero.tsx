@@ -14,7 +14,7 @@ export function Hero() {
                     {/* Headline */}
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight text-balance leading-tight">
                         24/7 replies + appointment booking for{" "}
-                        <span className="text-teal-600">NYC vet clinics</span>
+                        <span className="text-teal-600">USA vet clinics</span>
                         {" "}— without double bookings
                     </h1>
 
