@@ -74,7 +74,7 @@ export function Proof() {
                                     <svg className="w-5 h-5 text-teal-200 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
-                                    <span className="text-white">Analytics show real client needs</span>
+                                    <span className="text-white">Weekly insights show real client needs</span>
                                 </li>
                             </ul>
                         </div>
@@ -82,12 +82,17 @@ export function Proof() {
 
                     {/* Stat */}
                     <div className="mt-10 text-center">
-                        <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full border border-slate-200 shadow-sm">
-                            <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                            <span className="font-semibold text-slate-900">2,000+ messages handled</span>
-                            <span className="text-slate-500">in a real clinic environment</span>
+                        <div className="inline-flex flex-col items-center gap-2 px-6 py-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                            <div className="flex items-center gap-3">
+                                <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
+                                <span className="font-semibold text-slate-900">2,000+ messages handled</span>
+                                <span className="text-slate-500">in a real clinic (60-day pilot)</span>
+                            </div>
+                            <p className="text-sm text-slate-500 mt-2">
+                                We&apos;ll track these KPIs in your 14-day pilot: response time, booking requests, appointments booked, escalation rate.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ export function HowItWorks() {
                         How it works
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                        From first call to live in days, not months.
+                        From first message to live in days, not months.
                     </p>
                 </div>
 

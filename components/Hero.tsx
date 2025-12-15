@@ -13,17 +13,18 @@ export function Hero() {
                 <div className="text-center max-w-4xl mx-auto">
                     {/* Headline */}
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight text-balance leading-tight">
-                        24/7 answers + appointment booking for{" "}
+                        24/7 replies + appointment booking for{" "}
                         <span className="text-teal-600">NYC vet clinics</span>
-                        {" "}— without missed leads or double-booking
+                        {" "}— without double bookings
                     </h1>
 
                     {/* Subheadline */}
                     <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                        Reply on your channels in English / Russian / Spanish and convert inquiries into confirmed appointments using your clinic rules.
+                        VetFlow answers in English / Russian / Spanish and books into your Google Calendar.
+                        If a request is unclear or medical — it escalates to your team.
                     </p>
-                    <p className="mt-2 text-base text-slate-500 max-w-3xl mx-auto">
-                        No medical advice. Anything unclear or sensitive gets escalated to your team.
+                    <p className="mt-2 text-base text-amber-600 font-medium max-w-3xl mx-auto">
+                        No medical advice.
                     </p>
 
                     {/* Bullet points */}

@@ -23,8 +23,8 @@ const safetyPoints = [
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
         ),
-        title: "Privacy & control",
-        description: "Access is limited to authorized clinic staff. You decide what the bot can and can't answer. We don't sell or share your data.",
+        title: "Privacy & data handling",
+        description: "We store conversation logs for QA & reporting (you can request deletion). We minimize data: only what's needed to answer + book. We don't sell or share your data.",
     },
 ];
 

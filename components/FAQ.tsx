@@ -21,7 +21,7 @@ const faqs = [
     },
     {
         question: "What systems do you integrate with?",
-        answer: "We integrate with Google Calendar for scheduling. For channels, we support Instagram, Facebook Messenger, WhatsApp (if your policy allows), and website chat. Need something else? Let us know in the demo form and we'll confirm compatibility.",
+        answer: "We integrate with Google Calendar today. For channels: Instagram, Facebook Messenger, WhatsApp (if your policy allows), and website chat. If you use Cornerstone, AVImark, or another practice management system — tell us what you have, we'll confirm compatibility before any pilot.",
     },
     {
         question: "Does it replace my staff?",
