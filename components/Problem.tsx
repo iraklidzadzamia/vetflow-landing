@@ -34,10 +34,10 @@ export function Problem() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-                        Sound familiar?
+                        How much does "Please hold" cost you?
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                        These problems cost veterinary clinics time, money, and the ability to help more animals.
+                        Pet owners message after hours, on weekends, during holidays. By the time you reply, they've already booked elsewhere.
                     </p>
                 </div>
 
@@ -61,8 +61,11 @@ export function Problem() {
                 </div>
 
                 {/* Closing line */}
-                <p className="mt-10 text-center text-slate-600 font-medium">
-                    Every missed after-hours DM is a lost appointment — and often a negative review.
+                <p className="mt-10 text-center text-slate-900 font-semibold text-lg">
+                    Every unanswered message costs ~$250 in potential revenue.
+                </p>
+                <p className="mt-2 text-center text-slate-600">
+                    62% of messages to vet clinics go unanswered after hours. 80% of pet owners don't wait — they contact competitors.
                 </p>
             </div>
         </section>

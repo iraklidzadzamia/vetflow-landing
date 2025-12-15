@@ -3,6 +3,7 @@ import {
   Hero,
   Problem,
   Features,
+  ObjectionHandler,
   HowItWorks,
   BookingModes,
   Integrations,
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <Features />
+        <ObjectionHandler />
         <HowItWorks />
         <BookingModes />
         <Integrations />

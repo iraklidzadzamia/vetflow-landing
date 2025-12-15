@@ -13,14 +13,13 @@ export function Hero() {
                 <div className="text-center max-w-4xl mx-auto">
                     {/* Headline */}
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight text-balance leading-tight">
-                        24/7 replies + appointment booking for{" "}
-                        <span className="text-teal-600">USA vet clinics</span>
-                        {" "}— without double bookings
+                        Turn missed messages into booked patients —{" "}
+                        <span className="text-teal-600">24/7, without lifting a finger</span>
                     </h1>
 
                     {/* Subheadline */}
                     <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                        Choose: <strong>Answer-only</strong> (no bookings) or <strong>Direct booking</strong> into your Google Calendar.
+                        Your intelligent assistant replies instantly on WhatsApp, Facebook, and Instagram — answering questions, booking appointments, and recovering clients who message after hours.
                     </p>
                     <p className="mt-2 text-base text-slate-500 max-w-3xl mx-auto">
                         If a message is unclear or needs staff attention — it escalates to your team.
@@ -80,15 +79,23 @@ export function Hero() {
 
                     {/* Trust strip */}
                     <div className="mt-10 pt-8 border-t border-slate-200/60">
-                        <p className="text-sm text-slate-500">
-                            <svg className="inline-block w-4 h-4 mr-1 text-teal-600 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Live in a real clinic: 2,000+ messages handled in the last 60 days. Results vary by clinic.
-                        </p>
-                        <p className="text-xs text-slate-400 mt-2">
-                            KPIs we track: response time, booking requests, confirmed appointments, escalation rate.
-                        </p>
+                        <div className="flex flex-col items-center gap-4">
+                            {/* Integration badge */}
+                            <div className="flex items-center gap-3 text-sm text-slate-600">
+                                <svg className="w-5 h-5 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                <span className="font-medium">Real-time sync with Google Calendar</span>
+                            </div>
+
+                            {/* Social proof */}
+                            <p className="text-sm text-slate-500 text-center">
+                                <svg className="inline-block w-4 h-4 mr-1 text-teal-600 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                                Live in real clinics: 2,000+ messages handled in the last 60 days.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
