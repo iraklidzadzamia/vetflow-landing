@@ -32,8 +32,8 @@ const safetyPoints = [
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
         ),
-        title: "Your data stays yours",
-        description: "We only use your clinic-provided info to answer clients. Conversations are yours. We don't sell data or use it for other purposes.",
+        title: "Privacy & control",
+        description: "Access is limited to authorized clinic staff. You decide what the bot can and can't answer. We don't sell or share your data.",
     },
 ];
 
@@ -89,9 +89,8 @@ export function Safety() {
                     </h3>
                     <p className="text-slate-600 leading-relaxed">
                         Your clinic information is used only to answer client questions and book appointments.
-                        We do not share, sell, or use your data for training external models. Client conversations
-                        remain confidential and are accessible only to you. We follow industry standard security
-                        practices to protect all data in transit and at rest.
+                        We do not share or sell your data. Access is limited to your authorized team.
+                        When unsure, the AI escalates to your staff instead of guessing.
                     </p>
                 </div>
             </div>

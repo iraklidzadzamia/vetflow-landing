@@ -8,11 +8,10 @@ export function FinalCTA() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-                            See it working with your clinic&apos;s info.
+                            Get a demo <span className="text-slate-400 font-normal text-2xl sm:text-3xl">(no obligation)</span>
                         </h2>
                         <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                            Request a personalized demo. We&apos;ll show you how VetFlow AI handles real
-                            questions your clients ask — using your clinic&apos;s services and hours.
+                            We&apos;ll show you how VetFlow AI handles real questions — using your clinic&apos;s info.
                         </p>
                     </div>
 

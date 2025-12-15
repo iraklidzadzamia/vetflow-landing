@@ -69,8 +69,8 @@ export function Pricing() {
                         <div
                             key={index}
                             className={`relative p-8 rounded-2xl border ${plan.highlighted
-                                    ? "bg-teal-600 border-teal-600 text-white"
-                                    : "bg-white border-slate-200"
+                                ? "bg-teal-600 border-teal-600 text-white"
+                                : "bg-white border-slate-200"
                                 }`}
                         >
                             {plan.highlighted && (
@@ -113,8 +113,8 @@ export function Pricing() {
                             <Link
                                 href="#demo"
                                 className={`mt-8 block w-full py-3 px-4 text-center font-semibold rounded-full transition-colors ${plan.highlighted
-                                        ? "bg-white text-teal-600 hover:bg-teal-50"
-                                        : "bg-teal-600 text-white hover:bg-teal-700"
+                                    ? "bg-white text-teal-600 hover:bg-teal-50"
+                                    : "bg-teal-600 text-white hover:bg-teal-700"
                                     }`}
                             >
                                 {plan.cta}
@@ -138,6 +138,9 @@ export function Pricing() {
                             </span>
                         ))}
                     </div>
+                    <p className="text-center text-sm text-slate-500 mt-6">
+                        After you submit the form, we&apos;ll confirm fit and send a quote within 24 hours.
+                    </p>
                 </div>
             </div>
         </section>

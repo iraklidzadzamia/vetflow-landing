@@ -166,13 +166,12 @@ export function LeadForm({ className = "" }: LeadFormProps) {
 
                 <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1.5">
-                        Phone *
+                        Phone <span className="text-slate-400">(optional)</span>
                     </label>
                     <input
                         type="tel"
                         id="phone"
                         name="phone"
-                        required
                         className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? "border-red-300 bg-red-50" : "border-slate-200"
                             } focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 outline-none transition-colors`}
                         placeholder="(555) 123-4567"
@@ -261,7 +260,7 @@ export function LeadForm({ className = "" }: LeadFormProps) {
             </button>
 
             <p className="text-center text-sm text-slate-500">
-                Or email us at{" "}
+                We&apos;ll reply within 24 hours. No spam. Or email us at{" "}
                 <a href={`mailto:${siteConfig.email}`} className="text-teal-600 hover:underline">
                     {siteConfig.email}
                 </a>

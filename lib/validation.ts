@@ -17,9 +17,10 @@ export const leadFormSchema = z.object({
 
     phone: z
         .string()
-        .min(10, "Please enter a valid phone number")
         .max(20, "Phone number is too long")
-        .regex(/^[\d\s\-\+\(\)]+$/, "Please enter a valid phone number"),
+        .regex(/^[\d\s\-\+\(\)]*$/, "Please enter a valid phone number")
+        .optional()
+        .or(z.literal("")),
 
     website: z
         .string()
