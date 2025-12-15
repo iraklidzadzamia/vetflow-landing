@@ -7,7 +7,7 @@ const plans = [
         features: [
             "1 clinic location",
             "Instagram + Facebook Messenger",
-            "Pending booking mode",
+            "Answer-only mode",
             "English language support",
             "Email support",
         ],
@@ -19,8 +19,8 @@ const plans = [
         description: "For multi-location or high-volume clinics",
         features: [
             "Multiple locations",
-            "All channels: Instagram, Messenger, WhatsApp, Web",
-            "Slots or Direct booking mode",
+            "All channels: Instagram, FB, WhatsApp, Telegram",
+            "Direct booking (Google Calendar)",
             "English + Russian + Spanish",
             "Priority support",
             "Weekly insights report",
@@ -34,7 +34,7 @@ const plans = [
         features: [
             "Unlimited locations",
             "Custom integrations",
-            "Direct booking system connections",
+            "Direct booking + custom rules",
             "Dedicated onboarding",
             "SLA guarantees",
             "Custom training and refinement",
@@ -46,7 +46,7 @@ const plans = [
 
 const pricingFactors = [
     "Message volume",
-    "Booking mode",
+    "Mode (Answer-only / Direct)",
     "Number of channels",
     "Languages required",
 ];
