@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 import { leadFormSchema, type LeadFormData } from "@/lib/validation";
 
-// In-memory storage for leads (for development/demo)
-const leads: LeadFormData[] = [];
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
     try {
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ ok: true });
         }
 
-        // Store the lead
+        // Prepare lead data
         const lead: LeadFormData = {
             clinic_name: result.data.clinic_name,
             contact_name: result.data.contact_name,
@@ -43,15 +43,36 @@ export async function POST(request: Request) {
             message: result.data.message || "",
         };
 
-        leads.push(lead);
+        // Send email notification
+        try {
+            await resend.emails.send({
+                from: "VetFlow Leads <onboarding@resend.dev>",
+                to: "aiagentveterinary@gmail.com",
+                subject: `🐾 New Lead: ${lead.clinic_name}`,
+                html: `
+                    <h2>New VetFlow Lead!</h2>
+                    <p><strong>Clinic:</strong> ${lead.clinic_name}</p>
+                    <p><strong>Contact:</strong> ${lead.contact_name}</p>
+                    <p><strong>Email:</strong> <a href="mailto:${lead.email}">${lead.email}</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:${lead.phone}">${lead.phone}</a></p>
+                    <p><strong>Website:</strong> ${lead.website || "Not provided"}</p>
+                    <p><strong>Current System:</strong> ${lead.current_booking_system}</p>
+                    <p><strong>Message:</strong> ${lead.message || "No message"}</p>
+                    <hr>
+                    <p style="color: #666; font-size: 12px;">Sent from VetFlow Landing Page</p>
+                `,
+            });
+            console.log("[LEAD API] Email notification sent successfully");
+        } catch (emailError) {
+            console.error("[LEAD API] Failed to send email:", emailError);
+            // Don't fail the whole request if email fails
+        }
 
-        // Log the lead in a structured format
+        // Log the lead
         console.log("=".repeat(60));
         console.log("[LEAD API] New lead received at", new Date().toISOString());
         console.log("=".repeat(60));
         console.log(JSON.stringify(lead, null, 2));
-        console.log("=".repeat(60));
-        console.log(`[LEAD API] Total leads stored: ${leads.length}`);
         console.log("=".repeat(60));
 
         return NextResponse.json({ ok: true });
@@ -63,13 +84,4 @@ export async function POST(request: Request) {
             { status: 500 }
         );
     }
-}
-
-// Optional: GET endpoint to view leads (for development only)
-export async function GET() {
-    if (process.env.NODE_ENV === "production") {
-        return NextResponse.json({ error: "Not available" }, { status: 403 });
-    }
-
-    return NextResponse.json({ leads, count: leads.length });
 }
