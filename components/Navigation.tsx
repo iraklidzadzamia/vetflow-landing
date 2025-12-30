@@ -5,9 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-    { href: "#features", label: "Features" },
-    { href: "#how-it-works", label: "How it works" },
-    { href: "#integrations", label: "Integrations" },
+    { href: "#value", label: "What You Get" },
     { href: "#pricing", label: "Pricing" },
     { href: "#faq", label: "FAQ" },
 ];
@@ -31,8 +29,8 @@ export function Navigation() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isOpen
-                    ? "bg-white/95 backdrop-blur-sm shadow-sm"
-                    : "bg-transparent"
+                ? "bg-white/95 backdrop-blur-sm shadow-sm"
+                : "bg-transparent"
                 }`}
         >
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,13 +60,13 @@ export function Navigation() {
                         ))}
                     </div>
 
-                    {/* Desktop CTA */}
+                    {/* Desktop CTA with price */}
                     <div className="hidden md:block">
                         <Link
                             href="#demo"
                             className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors shadow-sm"
                         >
-                            Get a demo
+                            Get Started — $600/mo
                         </Link>
                     </div>
 
@@ -113,7 +111,7 @@ export function Navigation() {
                             onClick={handleLinkClick}
                             className="block w-full mt-4 px-5 py-3 text-center text-base font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors"
                         >
-                            Get a demo
+                            Get Started — $600/mo
                         </Link>
                     </div>
                 </div>

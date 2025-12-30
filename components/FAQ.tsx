@@ -4,71 +4,64 @@ import { useState } from "react";
 
 const faqs = [
     {
-        question: "Is this AI, humans, or hybrid?",
-        answer: "VetFlow AI is powered by AI that's trained on your clinic's specific information. For complex or sensitive situations, it escalates to your human team. You always have final say — it's a hybrid approach where AI handles routine questions while humans handle exceptions.",
+        question: "How fast can we go live?",
+        answer: "24 hours after you send us your clinic info (prices, hours, services, location). We handle all the technical setup.",
     },
     {
-        question: "What if a client asks for medical advice?",
-        answer: "The AI never diagnoses, prescribes, or recommends treatments. It answers general questions about your services and hours. For anything medical, it tells the client to call the clinic or book a consultation. This is a hard rule — no exceptions.",
+        question: "What if the AI gives a wrong answer?",
+        answer: "That's what the 14-day trial is for. We monitor conversations and refine the AI until it's hitting 85%+ accuracy on routine questions. If we can't get there, you don't pay.",
     },
     {
-        question: "Can we do after-hours only?",
-        answer: "Yes. Many clinics start with after-hours coverage only. The AI replies when your team is off — evenings, weekends, holidays. During business hours, your staff handles messages as usual.",
+        question: "Will it give medical advice?",
+        answer: "Never. The AI answers questions about prices, hours, location, and booking. For anything medical, it tells clients to call or book a consultation. This is a hard rule — no exceptions.",
     },
     {
-        question: "How do you prevent double-booking?",
-        answer: "In Direct booking mode, we check Google Calendar availability before creating any appointment. No appointment is created if the slot is already taken. This prevents double-booking by design.",
+        question: "Can I take over a conversation?",
+        answer: "Yes. Your admin clicks 'Pause AI' anytime and the conversation goes to them. Perfect for complex cases or VIP clients. Resume AI when done.",
     },
     {
-        question: "What systems do you integrate with?",
-        answer: "We integrate with Google Calendar for bookings. For messaging channels: Instagram, Facebook Messenger, WhatsApp, and Telegram. No phone calls or SMS — messaging apps only. If you use Cornerstone, AVImark, or another practice management system — tell us what you have, we'll confirm compatibility before any pilot.",
+        question: "What channels does it work with?",
+        answer: "WhatsApp, Instagram DMs, and Facebook Messenger. $600/mo for WhatsApp only, $800/mo for all three. We don't do phone calls or SMS.",
     },
     {
-        question: "Does it replace my staff?",
-        answer: "No. VetFlow AI handles repetitive questions and booking requests so your staff can focus on in-person patient care. Complex inquiries and all medical decisions stay with your team.",
+        question: "What about double-bookings?",
+        answer: "Impossible. We check Google Calendar in real-time before booking any appointment. If a slot is taken, AI offers the next available time.",
     },
     {
-        question: "What if it doesn't know the answer?",
-        answer: "If the AI isn't sure about something, it tells the client honestly and suggests they call or email your clinic directly. You set escalation rules — certain topics automatically trigger a handoff to your staff.",
+        question: "What languages?",
+        answer: "English, Russian, and Spanish. The AI detects the client's language automatically.",
     },
     {
-        question: "What languages do you support?",
-        answer: "English, Russian, and Spanish. The AI automatically detects the client's language and responds accordingly. If you need additional languages, let us know.",
+        question: "Can I cancel anytime?",
+        answer: "Yes. No contracts, no lock-in. Cancel with 30 days notice, we'll help migrate if needed.",
     },
     {
-        question: "How fast can we launch?",
-        answer: "Typical setup takes 2–5 days. This includes connecting channels, loading your clinic information, setting up calendar integration, and testing.",
-    },
-    {
-        question: "How do I pause or stop the assistant?",
-        answer: "You can pause anytime — we disable replies immediately. Messages can route to your staff while paused, then resume when you're ready. Perfect for busy hours or emergencies.",
+        question: "What's the catch?",
+        answer: "No catch. We make money when you stay subscribed. If the AI doesn't help you, you'll cancel, so we're motivated to make it work. That's why we offer the 85% accuracy guarantee.",
     },
 ];
 
 export function FAQ() {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <section id="faq" className="py-16 md:py-24 bg-slate-50">
+        <section id="faq" className="py-16 md:py-24 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-                        Frequently asked questions
+                        Questions? Answers.
                     </h2>
-                    <p className="mt-4 text-lg text-slate-600">
-                        Everything you need to know about VetFlow AI.
-                    </p>
                 </div>
 
                 <div className="space-y-3">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-xl border border-slate-200 overflow-hidden"
+                            className="bg-slate-50 rounded-xl border border-slate-100 overflow-hidden"
                         >
                             <button
                                 type="button"
-                                className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"
+                                className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-100 transition-colors"
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                 aria-expanded={openIndex === index}
                             >

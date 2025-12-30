@@ -2,14 +2,12 @@ import {
   Navigation,
   Hero,
   Problem,
-  Features,
-  ObjectionHandler,
-  HowItWorks,
-  BookingModes,
-  Integrations,
-  Safety,
+  ValueStack,
   Proof,
+  HowItWorks,
   Pricing,
+  Guarantee,
+  ObjectionHandler,
   FAQ,
   FinalCTA,
   Footer,
@@ -23,14 +21,12 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
-        <Features />
-        <ObjectionHandler />
-        <HowItWorks />
-        <BookingModes />
-        <Integrations />
-        <Safety />
+        <ValueStack />
         <Proof />
+        <HowItWorks />
         <Pricing />
+        <Guarantee />
+        <ObjectionHandler />
         <FAQ />
         <FinalCTA />
       </main>
