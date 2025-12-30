@@ -4,22 +4,22 @@ export const siteConfig = {
   tagline: "AI receptionist for veterinary clinics — 24/7 replies + appointment booking",
   description: "VetFlow AI replies instantly to pet owners, answers common questions, and books/reschedules appointments — directly inside Instagram, Facebook Messenger, WhatsApp, and your website.",
   url: "https://vetflow.ai",
-  email: "hello@vetflow.ai",
-  
+  email: "aiagentveterinary@gmail.com",
+
   socialLinks: {
     instagram: "",
     facebook: "",
   },
-  
+
   supportedChannels: [
     "Instagram",
-    "Facebook Messenger", 
+    "Facebook Messenger",
     "WhatsApp",
     "Website chat"
   ],
-  
+
   supportedLanguages: ["English", "Russian", "Spanish"],
-  
+
   bookingSystems: [
     { value: "none", label: "No booking system yet" },
     { value: "google_calendar", label: "Google Calendar" },

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Proof() {
     return (
         <section className="py-16 md:py-24 bg-white">
@@ -9,7 +11,7 @@ export function Proof() {
                         </svg>
                         <span>Real Case Study</span>
                     </div>
-                    <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
                         How BioNika Vet Clinic Freed Their Admin
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
@@ -19,12 +21,12 @@ export function Proof() {
 
                 <div className="max-w-5xl mx-auto">
                     {/* Case study card */}
-                    <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg">
+                    <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                         {/* Header */}
                         <div className="bg-slate-900 text-white p-6 sm:p-8">
                             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                                 <div>
-                                    <h3 className="text-2xl font-bold">🏥 BioNika Vet Clinic</h3>
+                                    <h3 className="text-2xl font-bold tracking-tight">🏥 BioNika Vet Clinic</h3>
                                     <p className="text-slate-400 mt-1">Tbilisi, Georgia</p>
                                 </div>
                                 <div className="flex items-center gap-2 px-4 py-2 bg-teal-500/20 rounded-full">
@@ -37,15 +39,15 @@ export function Proof() {
                         {/* Stats */}
                         <div className="grid sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
                             <div className="p-6 sm:p-8 text-center">
-                                <p className="text-4xl font-bold text-teal-600">3,000+</p>
+                                <p className="text-4xl font-bold text-teal-600 tracking-tight">3,000+</p>
                                 <p className="text-slate-600 mt-1">Messages handled</p>
                             </div>
                             <div className="p-6 sm:p-8 text-center">
-                                <p className="text-4xl font-bold text-teal-600">90%</p>
+                                <p className="text-4xl font-bold text-teal-600 tracking-tight">90%</p>
                                 <p className="text-slate-600 mt-1">Routine messages</p>
                             </div>
                             <div className="p-6 sm:p-8 text-center">
-                                <p className="text-4xl font-bold text-teal-600">24/7</p>
+                                <p className="text-4xl font-bold text-teal-600 tracking-tight">24/7</p>
                                 <p className="text-slate-600 mt-1">Coverage</p>
                             </div>
                         </div>
@@ -55,7 +57,7 @@ export function Proof() {
                             <div className="grid md:grid-cols-2 gap-8">
                                 {/* The Challenge */}
                                 <div>
-                                    <h4 className="text-lg font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                                    <h4 className="text-lg font-semibold text-slate-900 mb-4 flex items-center gap-2 tracking-tight">
                                         <span className="text-red-500">❌</span> The Challenge
                                     </h4>
                                     <ul className="space-y-3 text-slate-600">
@@ -69,7 +71,7 @@ export function Proof() {
                                             <svg className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                             </svg>
-                                            <span>"What are your prices?" — 50+ times per week</span>
+                                            <span>Routine questions — 50+ times per week</span>
                                         </li>
                                         <li className="flex items-start gap-3">
                                             <svg className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +90,7 @@ export function Proof() {
 
                                 {/* The Result */}
                                 <div>
-                                    <h4 className="text-lg font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                                    <h4 className="text-lg font-semibold text-slate-900 mb-4 flex items-center gap-2 tracking-tight">
                                         <span className="text-teal-500">✅</span> The Result
                                     </h4>
                                     <ul className="space-y-3 text-slate-600">
@@ -128,19 +130,43 @@ export function Proof() {
                             </blockquote>
                             <p className="text-center text-slate-500 mt-4">— BioNika Clinic Team</p>
                         </div>
+                    </div>
 
-                        {/* Key insight */}
-                        <div className="p-6 sm:p-8 bg-gradient-to-r from-amber-50 to-orange-50 border-t border-amber-100">
-                            <div className="flex items-start gap-4 max-w-2xl mx-auto">
-                                <div className="text-2xl">💡</div>
-                                <div>
-                                    <p className="font-semibold text-slate-900 mb-1">The Key Insight</p>
-                                    <p className="text-slate-600">
-                                        90% of messages are routine questions about prices, location, and availability.
-                                        Your admin doesn't need to answer these — AI can.
-                                        <strong> Free your humans for human problems.</strong>
-                                    </p>
-                                </div>
+                    {/* Demo GIF Section */}
+                    <div className="mt-12">
+                        <div className="text-center mb-6">
+                            <h3 className="text-xl font-semibold text-slate-900 tracking-tight">
+                                📱 See It In Action
+                            </h3>
+                            <p className="text-slate-600 mt-2">
+                                Client books appointment → Instantly appears in Google Calendar
+                            </p>
+                        </div>
+                        <div className="flex justify-center">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 hover:shadow-3xl transition-shadow duration-300">
+                                <Image
+                                    src="/bot-demo.gif"
+                                    alt="VetFlow AI booking an appointment and syncing to Google Calendar"
+                                    width={400}
+                                    height={867}
+                                    className="w-auto max-w-full h-auto max-h-[600px]"
+                                    unoptimized
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Key insight */}
+                    <div className="mt-12 p-6 sm:p-8 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100">
+                        <div className="flex items-start gap-4 max-w-2xl mx-auto">
+                            <div className="text-2xl">💡</div>
+                            <div>
+                                <p className="font-semibold text-slate-900 mb-1 tracking-tight">The Key Insight</p>
+                                <p className="text-slate-600">
+                                    90% of messages are routine questions about prices, location, and availability.
+                                    Your admin doesn't need to answer these — AI can.
+                                    <strong> Free your humans for human problems.</strong>
+                                </p>
                             </div>
                         </div>
                     </div>
