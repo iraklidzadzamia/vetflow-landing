@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-const FB_PIXEL_ID = '1953520535603427';
+const FB_PIXEL_ID = '770171008123519';
 
 export function FacebookPixel() {
     return (
