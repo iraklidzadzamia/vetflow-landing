@@ -5,8 +5,10 @@ import ReactPixel from 'react-facebook-pixel';
 
 export function FacebookPixel() {
     useEffect(() => {
-        ReactPixel.init('2809106915953241');
-        ReactPixel.pageView();
+        if (typeof window !== 'undefined') {
+            ReactPixel.init('2809106915953241');
+            ReactPixel.pageView();
+        }
     }, []);
 
     return null;
