@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
+import { FacebookPixel } from "@/components/FacebookPixel";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -112,6 +113,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-white antialiased">
+        <FacebookPixel />
         {children}
       </body>
     </html>

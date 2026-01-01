@@ -12,6 +12,7 @@
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1",
+    "react-facebook-pixel": "^1.0.4",
     "resend": "^6.6.0",
     "zod": "^4.1.13"
   },

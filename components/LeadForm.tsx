@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ReactPixel from "react-facebook-pixel";
 import { siteConfig } from "@/lib/config";
 import { leadFormSchema, type LeadFormData } from "@/lib/validation";
 
@@ -56,6 +57,13 @@ export function LeadForm({ className = "" }: LeadFormProps) {
             const responseData = await response.json();
 
             if (response.ok && responseData.ok) {
+                // Track successful lead submission
+                ReactPixel.track('Lead', {
+                    content_name: 'VetFlow 14-day Pilot Request',
+                    content_category: 'Lead Form',
+                    value: 600,
+                    currency: 'USD'
+                });
                 setStatus("success");
             } else {
                 setErrorMessage(responseData.error || "Something went wrong. Please try again.");

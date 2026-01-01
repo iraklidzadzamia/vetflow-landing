@@ -1,4 +1,7 @@
+'use client';
+
 import Link from "next/link";
+import ReactPixel from "react-facebook-pixel";
 
 export function Hero() {
     return (
@@ -83,6 +86,11 @@ export function Hero() {
                     <div className="mt-10 flex flex-col items-center justify-center">
                         <Link
                             href="#demo"
+                            onClick={() => ReactPixel.track('InitiateCheckout', {
+                                content_name: 'Hero CTA Click',
+                                value: 600,
+                                currency: 'USD'
+                            })}
                             className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-all shadow-lg shadow-teal-600/25 hover:shadow-xl hover:shadow-teal-600/30"
                         >
                             Get Started — $600/mo
