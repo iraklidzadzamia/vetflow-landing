@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
 import { FacebookPixel } from "@/components/FacebookPixel";
+import { SectionTracker } from "@/components/SectionTracker";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -114,6 +115,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white antialiased">
         <FacebookPixel />
+        <SectionTracker />
         {children}
       </body>
     </html>

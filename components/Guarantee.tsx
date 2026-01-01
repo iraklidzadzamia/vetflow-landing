@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Guarantee() {
     return (
-        <section className="py-16 md:py-24 bg-gradient-to-br from-teal-600 to-teal-700">
+        <section id="guarantee" className="py-16 md:py-24 bg-gradient-to-br from-teal-600 to-teal-700">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
                     {/* Shield icon */}

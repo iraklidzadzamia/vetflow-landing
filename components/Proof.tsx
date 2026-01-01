@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Proof() {
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section id="proof" className="py-16 md:py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 border border-teal-200 rounded-full text-sm text-teal-700 mb-4">

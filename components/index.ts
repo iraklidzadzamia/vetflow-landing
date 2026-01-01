@@ -17,4 +17,5 @@ export { ScrollToTop } from "./ScrollToTop";
 export { ObjectionHandler } from "./ObjectionHandler";
 export { ValueStack } from "./ValueStack";
 export { Guarantee } from "./Guarantee";
+export { SectionTracker } from "./SectionTracker";
 

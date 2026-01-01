@@ -5,7 +5,7 @@ import { trackEvent } from "@/components/FacebookPixel";
 
 export function Hero() {
     return (
-        <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg overflow-hidden">
+        <section id="hero" className="relative pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-teal-100 rounded-full opacity-50 blur-3xl" />
