@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { trackEvent } from "@/components/FacebookPixel";
 
 const navLinks = [
     { href: "#value", label: "What You Get" },
@@ -60,10 +61,14 @@ export function Navigation() {
                         ))}
                     </div>
 
-                    {/* Desktop CTA with price */}
                     <div className="hidden md:block">
                         <Link
                             href="#demo"
+                            onClick={() => trackEvent('InitiateCheckout', {
+                                content_name: 'CTA: Navigation - Get Started $600/mo',
+                                value: 600,
+                                currency: 'USD'
+                            })}
                             className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors shadow-sm"
                         >
                             Get Started — $600/mo
@@ -108,7 +113,14 @@ export function Navigation() {
                         ))}
                         <Link
                             href="#demo"
-                            onClick={handleLinkClick}
+                            onClick={() => {
+                                handleLinkClick();
+                                trackEvent('InitiateCheckout', {
+                                    content_name: 'CTA: Mobile Nav - Get Started $600/mo',
+                                    value: 600,
+                                    currency: 'USD'
+                                });
+                            }}
                             className="block w-full mt-4 px-5 py-3 text-center text-base font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors"
                         >
                             Get Started — $600/mo

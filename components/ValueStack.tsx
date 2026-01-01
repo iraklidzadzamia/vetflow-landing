@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackEvent } from "@/components/FacebookPixel";
 
 const valueItems = [
     {
@@ -146,6 +149,11 @@ export function ValueStack() {
                             </p>
                             <Link
                                 href="#demo"
+                                onClick={() => trackEvent('InitiateCheckout', {
+                                    content_name: 'CTA: ValueStack - Get Started',
+                                    value: 600,
+                                    currency: 'USD'
+                                })}
                                 className="inline-flex items-center px-6 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-teal-50 transition-colors"
                             >
                                 Get Started

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackEvent } from "@/components/FacebookPixel";
 
 const plans = [
     {
@@ -92,6 +95,11 @@ export function Pricing() {
 
                             <Link
                                 href="#demo"
+                                onClick={() => trackEvent('InitiateCheckout', {
+                                    content_name: `CTA: Pricing - ${plan.name} (${plan.price}/mo)`,
+                                    value: parseInt(plan.price.replace('$', '')),
+                                    currency: 'USD'
+                                })}
                                 className={`block w-full py-4 px-4 text-center font-semibold rounded-full transition-colors ${plan.highlighted
                                     ? "bg-teal-600 text-white hover:bg-teal-700"
                                     : "bg-slate-100 text-slate-900 hover:bg-slate-200"

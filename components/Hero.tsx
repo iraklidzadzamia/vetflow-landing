@@ -87,7 +87,7 @@ export function Hero() {
                         <Link
                             href="#demo"
                             onClick={() => trackEvent('InitiateCheckout', {
-                                content_name: 'Hero CTA Click',
+                                content_name: 'CTA: Hero - Get Started $600/mo',
                                 value: 600,
                                 currency: 'USD'
                             })}

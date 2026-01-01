@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackEvent } from "@/components/FacebookPixel";
 
 export function Guarantee() {
     return (
@@ -48,6 +51,11 @@ export function Guarantee() {
 
                         <Link
                             href="#demo"
+                            onClick={() => trackEvent('InitiateCheckout', {
+                                content_name: 'CTA: Guarantee - Start Risk-Free Trial',
+                                value: 600,
+                                currency: 'USD'
+                            })}
                             className="inline-flex items-center px-8 py-4 bg-white text-teal-600 font-semibold rounded-full hover:bg-teal-50 transition-colors shadow-lg"
                         >
                             Start Your Risk-Free Trial

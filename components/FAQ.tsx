@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import { trackEvent } from "@/components/FacebookPixel";
 const faqs = [
     {
         question: "How fast can we go live?",
@@ -62,7 +62,16 @@ export function FAQ() {
                             <button
                                 type="button"
                                 className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-100 transition-colors"
-                                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                                onClick={() => {
+                                    const isOpening = openIndex !== index;
+                                    setOpenIndex(isOpening ? index : null);
+                                    if (isOpening) {
+                                        trackEvent('ViewContent', {
+                                            content_name: `FAQ: ${faq.question}`,
+                                            content_category: 'FAQ Click',
+                                        });
+                                    }
+                                }}
                                 aria-expanded={openIndex === index}
                             >
                                 <span className="font-semibold text-slate-900">{faq.question}</span>
