@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import ReactPixel from "react-facebook-pixel";
+import { trackEvent } from "@/components/FacebookPixel";
 import { siteConfig } from "@/lib/config";
 import { leadFormSchema, type LeadFormData } from "@/lib/validation";
 
@@ -58,7 +58,7 @@ export function LeadForm({ className = "" }: LeadFormProps) {
 
             if (response.ok && responseData.ok) {
                 // Track successful lead submission
-                ReactPixel.track('Lead', {
+                trackEvent('Lead', {
                     content_name: 'VetFlow 14-day Pilot Request',
                     content_category: 'Lead Form',
                     value: 600,

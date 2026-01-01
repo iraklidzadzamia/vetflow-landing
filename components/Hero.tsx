@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import ReactPixel from "react-facebook-pixel";
+import { trackEvent } from "@/components/FacebookPixel";
 
 export function Hero() {
     return (
@@ -86,7 +86,7 @@ export function Hero() {
                     <div className="mt-10 flex flex-col items-center justify-center">
                         <Link
                             href="#demo"
-                            onClick={() => ReactPixel.track('InitiateCheckout', {
+                            onClick={() => trackEvent('InitiateCheckout', {
                                 content_name: 'Hero CTA Click',
                                 value: 600,
                                 currency: 'USD'
