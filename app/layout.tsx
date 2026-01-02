@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/lib/config";
 import { FacebookPixel } from "@/components/FacebookPixel";
 import { SectionTracker } from "@/components/SectionTracker";
+import { MicrosoftClarity } from "@/components/MicrosoftClarity";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -115,6 +116,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white antialiased">
         <FacebookPixel />
+        <MicrosoftClarity />
         <SectionTracker />
         {children}
       </body>
