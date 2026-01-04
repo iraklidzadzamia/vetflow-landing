@@ -7,7 +7,7 @@ const valueItems = [
     {
         title: "AI Assistant answering 24/7/365",
         description: "No sick days, no vacations, no overtime pay",
-        value: "$3,000",
+        value: "$600",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -17,7 +17,7 @@ const valueItems = [
     {
         title: "Multi-language support (EN/RU/ES)",
         description: "Serve international clients without hiring",
-        value: "$500",
+        value: "$100",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
